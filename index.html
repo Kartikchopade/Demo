@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/x-icon" href="titlelogo.jpg">
 <style>
 header
 {
@@ -73,7 +74,7 @@ li a:hover:not(.active) {
 	height: 500px;
 	position: absolute;
 	left: 50%;
-	top: 125%;
+	top: 100%;
 	transform: translate(-50%,-50%);
 	background-image: url(image.jpg);
 	background-size: 100% 100%;
@@ -171,24 +172,39 @@ li a:hover:not(.active) {
 	margin-top:300px;
 }
 @media screen and (max-width: 600px) {
+ ul.topnav {margin-top:35px;}
   ul.topnav li.right, 
   ul.topnav li {float: none;}   
 }
 @media screen and (max-width: 600px) {
-	div.maindiv{margin-top:200px;}	
+	div.maindiv{margin-top:120px;}	
+	
 }
 @media screen and (max-width: 600px) {
 	div.dropdown .dropdown-content{width:100%;}	
 	div.dropdown .dropdown-content a{text-align:center;}
 	section.para h1{margin-top:100%;}	
 	aside.as img{margin-top:180px;}
-	aside.as img{margin-left:-800px;}
+	aside.as img{margin-left:-850px;}
 	section.para2 aside{margin-left:-450px;}
 	section.para2 aside .f1{margin-top:300px;}
 	section.para2 aside .f2{margin-top:300px;}
 	section.para2 aside .f2{margin-left:-450px;}
 	section.para2 aside figcaption.fig{margin-left:-430px;}
+	section.para h1{margin-top:600px;}
+	section.para p{margin-top:0px;}
 	
+}
+@media screen and (max-width: 600px) {
+	
+	section footer.foot1 a{margin-left:-490px;}
+	section footer.foot1 h1{margin-top:170px;}
+	section footer.foot1 h1{margin-left:-490px;}
+	
+	section footer.foot2 h1{margin-left:-940px;}	
+	section footer.foot2 a{margin-left:-940px;}
+	section footer.foot2 h1{margin-top:170px;}
+		
 	
 }
 
@@ -271,13 +287,13 @@ li a:hover:not(.active) {
 	</section><br>
 	
 	<section class="foot">
-		<footer style="background-color:Gray;">
+		<footer  style="background-color:Gray;">
 			<h1 style="color:white;">Branches</h1>
 			<p style="color:yellow;">THANE : +91 8422800381</p>
 			<p style="color:yellow;">BORIVALI : +91 8422800384</p>
 			<p style="color:yellow;">MOHALI : +91 7208008461</p>
 		</footer>
-		<footer class="foot1" style="padding-left:650px; margin:-150px;">
+		<footer class="foot1" style="background-color:Gray;padding-left:650px; margin:-150px;">
 			<h1 style="color:white;">Quastech</h1>
 			<a href="#" style="color:yellow;">info@quastech.in</a><br>
 			<a href="#" style="color:yellow;">Software Development</a><br>
