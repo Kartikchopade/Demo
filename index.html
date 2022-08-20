@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/x-icon" href="titlelogo.jpg">
+<style>
+
+body{
+ margin:0;
+ background:url("image.jpg");
+ background-attachment:fixed;
+ background-position:center;
+ background-repeat:no-repeat; 
+ background-size:cover;
+ overflow-x:hidden;
+}
+.icon
+{
+	float:right;	
+}
+.icon1 
+{
+	margin-top:10px;
+	font-size:25px;	
+}
+.icon1 a
+{
+	width:30px;
+	height:30px;
+	display:inline-block;
+	
+}
+.icon1 a:hover{
+	background-color:black;
+	color:orange;
+
+}
+ul {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+li a:hover:not(.active) {
+  background-color: #04AA6D;
+}
+
+
+.topnav 
+{
+	
+	width:100%;
+	background:rgba(0,0,0,0.5);
+	
+}
+.topnav a
+{
+	font-size:20px;
+}
+.topnav button:hover
+{
+	background-color:green;
+	color:#fff;
+}
+
+.maindiv
+{
+	width: 100%;
+	height: 500px;
+	position: absolute;
+	left: 50%;
+	top: 450px;
+	transform: translate(-50%,-50%);
+	background-image: url(3.jpg);
+	background-size: 100% 100%;
+	box-shadow: 1px 2px 10px black;
+	animation: slider 12s infinite linear;
+}
+	@keyframes slider
+	{
+		0%
+		{
+			background-image: url(1.jpg);
+		}
+		35%
+		{
+			background-image: url(2.jpg);
+		}
+		75%
+		{
+			background-image: url(3.jpg);
+		}
+	}
+.para
+{
+	margin-top:650px;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;  
+  
+}
+.row 
+{
+	
+	margin: 0 -5px;
+	text-align:center;
+	
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin-bottom: 20px;
+  
+}
+
+.column .card:hover
+{	
+
+	background-color:#50C878;    
+}
+.column a:hover
+{
+	color:#fff;
+	
+}
+.column .card a,h4
+{
+	font-size:25px;
+	text-decoration: none;
+}
+.card i.fa {
+    font-size: 60px;
+    color: #0051ff;
+}
+.card i.fa:hover {
+    font-size: 60px;
+    color: #fff;
+}
+</style>
+</head>
+<body>
+<div class="icon">
+        <div class="icon1">
+            <a class="facebook" href="https://www.facebook.com/Quastech-740237719699886/" target="_blank"><i class="fa fa-facebook"></i></a></li>&nbsp;&nbsp;
+            <a class="twitter" href="https://twitter.com/quastechinfo" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;
+            <a class="instagram" href="https://instagram.com/quastech" target="_blank"><i class="fa fa-instagram"></i></a>&nbsp;&nbsp;
+            <a class="youtube" href="https://goo.gl/1Czht4" target="_blank"><i class="fa fa-youtube"></i></a>&nbsp;&nbsp;
+            <a class="linkedin" href="https://www.linkedin.com/company/quastech-expertise-in-software-testing-trainings/" target="_blank"><i class="fa fa-linkedin"></i></a>&nbsp;&nbsp;
+         </div>
+</div>
+
+<ul class="topnav">
+	<img  style="border-radius:90px;border:1px solid black;"  width="180" src="pic.jpg" alt="Loading...."/>
+  <li style="float:right;"><a href="registration.html"><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp;Registration</a></li>
+  <li style="float:right;"><a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;Login</a></li>
+  <li style="float:right;"><a href="index.html"><i class="fa fa-fw fa-home" aria-hidden="true"></i>&nbsp;Home</a></li>
+</ul>
+<div class="maindiv">
+
+</div>
+<section class="para">
+	<h1 style="background-color:blue;color:white;text-align:center;font-size:60px;">TRAINING WE OFFER</h1>
+	<p style="background-color:tomato;text-align:center;font-size:30px;color:white;">When Climbing The Career Ladder Choose Quastech</p>
+</section>
+<section>
+<div class="row">
+  <div class="column">
+    <div class="card">
+		<a  href="#">
+			<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+			<h4>
+				Quastech Degree <br>Program +
+			</h4>
+		</a>      
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+		<a  href="#">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+				<h4> Software Testing <br>Course </h4>
+        </a>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+		<a  href="#">
+            <i class="fa fa-book" aria-hidden="true"></i>
+                <h4>Java Development<br> Course </h4>
+        </a>     
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+		<a href="#">
+            <i class="fa fa-book" aria-hidden="true"></i>
+            <h4>Full Stack Java Development<br>Course</h4>
+        </a>    
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+		<a  href="#">
+            <i class="fa fa-comment-o" aria-hidden="true"></i>
+            <h4>Python Development<br>Course</h4>
+        </a>  
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+		<a  href="#">
+            <i class="fa fa-book" aria-hidden="true"></i>
+            <h4>Full Stack Python Development<br>Course</h4>
+        </a>    
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+		<a  href="#">
+            <i class=" fa fa-bookmark-o" aria-hidden="true"></i>
+				<h4>Web Designing<br>Course</h4>
+        </a>  
+    </div>
+  </div>
+  
+   <div class="column">
+    <div class="card">
+		<a  href="#">
+			<i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                <h4>PHP MySQL<br>Course </h4>
+        </a>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+		<a  href="#">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+				<h4>English Speaking<br>Course</h4>
+        </a>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+		<a href="#">
+            <i class="fa fa-comment-o" aria-hidden="true"></i>
+				<h4>Digital Marketing<br>Course </h4>
+        </a>
+    </div>
+  </div> 
+  
+  
+</div>
+</section><br><br>
+</body>
+</html>
+
+
