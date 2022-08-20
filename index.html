@@ -1,19 +1,145 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" type="image/x-icon" href="titlelogo.jpg">
 <style>
+header
+{
+	background-color:#fff;
+	height:100px;
+	
+}
 
 body{
  margin:0;
- background:url("back.jpg");
+ background:url("image.jpg");
  background-attachment:fixed;
  background-position:center;
  background-repeat:no-repeat; 
  background-size:cover;
  overflow-x:hidden;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+.topnav 
+{
+	width:100%;
+	background:rgba(0,0,0,0.5);
+	
+}
+.topnav a
+{
+	font-size:20px;
+}
+.topnav button:hover
+{
+	background-color:green;
+	color:#fff;
+}
+
+
+.maindiv
+{
+	width: 70%;
+	height: 500px;
+	position: absolute;
+	left: 50%;
+	top: 70%;
+	transform: translate(-50%,-50%);
+	background-image: url(3.jpg);
+	background-size: 100% 100%;
+	box-shadow: 5px 5px 10px black;
+	animation: slider 12s infinite;
+}
+	@keyframes slider
+	{
+		0%
+		{
+			background-image: url(1.jpg);			
+		}
+		35%
+		{
+			background-image: url(2.jpg);			
+		}
+		75%
+		{
+			background-image: url(3.jpg);			
+		}
+	}
+.para
+{
+	margin-top:45%;
+}
+ 
+ 
+ .dropdown .dropbtn {
+  font-size: 20px;  
+  border: none;  
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  width:100%;
+  
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;  
+  background-color: green;  
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+
+.dropdown-content a {
+  
+  color: white;
+  padding: 12px 16px; 
+  
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  
 }
 .icon
 {
@@ -36,132 +162,57 @@ body{
 	color:orange;
 
 }
-ul {
-
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-
-li a:hover:not(.active) {
-  background-color: #04AA6D;
-}
-
-
-.topnav 
+.para2
 {
-	
-	width:100%;
-	background:rgba(0,0,0,0.5);
-	
+	margin-top:300px;
 }
-.topnav a
+.foot
 {
-	font-size:20px;
+	margin-top:300px;
 }
-.topnav button:hover
-{
-	background-color:green;
-	color:#fff;
-}
-.maindiv
-{
-	width: 100%;
-	height: 500px;
-	position: absolute;
-	left: 50%;
-	top: 650px;
-	transform: translate(-50%,-50%);
-	background-image: url(3.jpg);
-	background-size: 100% 100%;
-	box-shadow: 1px 2px 10px black;
-	animation: slider 12s infinite linear;
-}
-	@keyframes slider
-	{
-		0%
-		{
-			background-image: url(1.jpg);
-		}
-		35%
-		{
-			background-image: url(2.jpg);
-		}
-		75%
-		{
-			background-image: url(3.jpg);
-		}
-	}
-.para
-{
-	margin-top:900px;
-}
-.column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;  
-}
-.row 
-{
-	margin: 0 -5px;
-	text-align:center;
-}
-
 @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
+ ul.topnav {margin-top:35px;}
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}   
 }
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
-  margin-bottom: 20px;
-}
-
-.column .card:hover
-{	
-
-	background-color:#50C878;    
-}
-.column a:hover
-{
-	color:#fff;
+@media screen and (max-width: 600px) {
+	div.maindiv{margin-top:70%;}	
 	
 }
-.column .card a,h4
-{
-	font-size:25px;
-	text-decoration: none;
+@media screen and (max-width: 600px) {
+	div.dropdown .dropdown-content{width:100%;}	
+	div.dropdown .dropdown-content a{text-align:center;}
+	section.para h1{margin-top:100%;}	
+	aside.as img{margin-top:370px;}
+	aside.as img{margin-left:-870px;}
+	section.para2 aside{margin-left:-450px;}
+	section.para2 aside .f1{margin-top:300px;}
+	section.para2 aside .f2{margin-top:300px;}
+	section.para2 aside .f2{margin-left:-450px;}
+	section.para2 aside figcaption.fig{margin-left:-430px;}
+	section.para h1{margin-top:600px;}
+	section.para p{margin-top:0px;}
+	
 }
-.card i.fa {
-    font-size: 60px;
-    color: #0051ff;
+@media screen and (max-width: 600px) {
+	section footer.foot0 h1{margin-left:10px;}
+	section footer.foot0 p{margin-left:10px;}
+	
+	section footer.foot1 a{margin-left:-490px;}
+	section footer.foot1 h1{margin-top:170px;}
+	section footer.foot1 h1{margin-left:-490px;}
+	
+	section footer.foot2 h1{margin-left:-890px;}	
+	section footer.foot2 a{margin-left:-890px;}
+	section footer.foot2 h1{margin-top:170px;}
+		
+	
 }
-.card i.fa:hover {
-    font-size: 60px;
-    color: #fff;
-}
+
 </style>
 </head>
 <body>
-<div class="icon">
+	<div class="icon">
         <div class="icon1">
             <a class="facebook" href="https://www.facebook.com/Quastech-740237719699886/" target="_blank"><i class="fa fa-facebook"></i></a></li>&nbsp;&nbsp;
             <a class="twitter" href="https://twitter.com/quastechinfo" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;
@@ -169,118 +220,110 @@ li a:hover:not(.active) {
             <a class="youtube" href="https://goo.gl/1Czht4" target="_blank"><i class="fa fa-youtube"></i></a>&nbsp;&nbsp;
             <a class="linkedin" href="https://www.linkedin.com/company/quastech-expertise-in-software-testing-trainings/" target="_blank"><i class="fa fa-linkedin"></i></a>&nbsp;&nbsp;
          </div>
-</div>
-
+    </div>
+<header>
+	<img  style="margin-top:20px;border-radius:40px;border:1px solid black;" src="pic.jpg" alt="Loading...." height="70px;"/>
+	<h2 style="text-align:center;margin-top:-55px;background-color:red;font-size:30px;color:#fff; margin-left:15px;"><marquee direction="right" behavior="alternate" style="margin-left:260px; height:30px;">Welcome To Quastech</marquee></h2>
+</header>
 <ul class="topnav">
-	<img  style="border-radius:90px;border:1px solid black;"  width="180" src="pic.jpg" alt="Loading...."/>
-  <li style="float:right;"><a href="#registration"><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp;Registration</a></li>
-  <li style="float:right;"><a href="main.html"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;Login</a></li>
-</ul>
+  <li><a class="active" href="#home"><i class="fa fa-fw fa-home"></i>HOME</a></li>
+  <li><a href="#news"><i class="fa fa-newspaper-o"></i>&nbsp;NEWS</a></li>
+  <li>
+	  <div class="dropdown">
+		<button class="dropbtn">COURSES
+		  <i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+		  <a href="#">Software Testing Course</a>
+		  <a href="#">Java Development Course</a>
+		  <a href="#">Full Stack Java Development</a>
+		  <a href="#">Python Development Course</a>
+		  <a href="#">Python Data Science Course</a>
+		  <a href="#">Full Stack Python Development</a>
+		  <a href="#">Web Designing Course</a>
+		</div>
+	  </div> 
+  </li>  
+  <li><a href="#contact"><i class="fa fa-phone"></i>&nbsp;CONTACT</a></li>  
+  <li><a href="#about"><i class="fa fa-info"></i>&nbsp;ABOUT</a></li>
+  <li style="float:right;"><button style="margin-top:5px;height:40px;width:110px;border-radius:5px;font-size:15px;"><i class="fa fa-fw fa-search"></i>&nbsp;SEARCH</button>&nbsp;&nbsp;</li>  
+  <li style="float:right;"><input type="text" name="data" style="margin-top:5px;height:35px;width:200px;border-radius:6px;" placeholder="Search Data Here.."></li>
+ </ul>
+<br><br>
 <div class="maindiv">
-
 </div>
-<section class="para">
-	<h1 style="color:lightgreen;text-align:center;font-size:60px;">TRAINING WE OFFER</h1>
-	<p style="text-align:center;font-size:30px;">When Climbing The Career Ladder Choose Quastech</p>
-</section>
-<section>
-<div class="row">
-  <div class="column">
-    <div class="card">
-		<a  href="#">
-			<i class="fa fa-graduation-cap" aria-hidden="true"></i>
-			<h4>
-				Quastech Degree <br>Program +
-			</h4>
-		</a>      
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-		<a  href="#">
-            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-				<h4> Software Testing <br>Course </h4>
-        </a>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-		<a  href="#">
-            <i class="fa fa-book" aria-hidden="true"></i>
-                <h4>Java Development<br> Course </h4>
-        </a>     
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-		<a href="#">
-            <i class="fa fa-book" aria-hidden="true"></i>
-            <h4>Full Stack Java Development<br>Course</h4>
-        </a>    
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-		<a  href="#">
-            <i class="fa fa-comment-o" aria-hidden="true"></i>
-            <h4>Python Development<br>Course</h4>
-        </a>  
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-		<a  href="#">
-            <i class="fa fa-book" aria-hidden="true"></i>
-            <h4>Full Stack Python Development<br>Course</h4>
-        </a>    
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-		<a  href="#">
-            <i class=" fa fa-bookmark-o" aria-hidden="true"></i>
-				<h4>Web Designing<br>Course</h4>
-        </a>  
-    </div>
-  </div>
-  
-   <div class="column">
-    <div class="card">
-		<a  href="#">
-			<i class="fa fa-bookmark-o" aria-hidden="true"></i>
-                <h4>PHP MySQL<br>Course </h4>
-        </a>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-		<a  href="#">
-            <i class="fa fa-globe" aria-hidden="true"></i>
-				<h4>English Speaking<br>Course</h4>
-        </a>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-		<a href="#">
-            <i class="fa fa-comment-o" aria-hidden="true"></i>
-				<h4>Digital Marketing<br>Course </h4>
-        </a>
-    </div>
-  </div> 
-  
-  
-</div>
-</section><br><br>
+	<section  class="para">
+		<h1 style="background-color:blue;color:white;text-align:center;font-size:40px;">WELCOME TO QUASTECH<br>(QUORATE SOFTWARE SOLUTIONS & TECHNOLOGIES) </h1>
+		<p style="text-align:center;background-color:tomato;color:white;font-size:25px;font-family:monospace;">WE OFFER RETAIL AND CORPORATE TRAINING FOR SOFTWARE TESTING, 
+		AUTOMATION TESTING, PYTHON DEVELOPMENT, MACHINE LEARNING, DATA SCIENCE, ARTIFICIAL INTELLIGENCE, 
+		JAVA DEVELOPMENT, SELENIUM, PHP & MYSQL, DIGITAL MARKETING, ENGLISH COMMUNICATION, WEB DESIGNING, 
+		ROBOTIC PROCESS AUTOMATION, ISTQB CERTIFICATION, 
+		OCJP CERTIFICATION INDUSTRIAL TRAINING IN THANE, BORIVALI, MUMBAI AND NAVI MUMBAI.</p>
+	</section><br>
+	<section id="news" class="para1">
+	<h1 style="color:blue;font-size:40px;border:1px solid black;background-color:tomato;"><marquee direction="right" behavior="alternate">Quastech Software Training Institute in Thane</marquee></h1>
+		<p style="background-color:Violet;color:white;font-size:20px;font-family:monospace;">Quastech Training & Business model reflects in-depth understanding of Software
+		<br>Industry & its need in the area of software & application development & testing.<br>
+		We have the specialized and certified faculty for each content like<br> Software Testing, Java Development,
+		Python Development, Data Science,<br> Digital Marketing, Robotic Process Automation,<br>
+		Web Designing and PHP MySQL etc. Our training is 100% based on current industry <br>requirements and real-time projects. Apart from the technical knowledge,<br>
+		we believe in the overall growth of the candidates.<br>
+		Quastech Training & Business model reflects in-depth understanding of Software
+		<br>Industry & its need in the area of software & application development & testing.<br>
+		We have the specialized and certified faculty for each content like<br> Software Testing, Java Development,
+		Python Development, Data Science,<br> Digital Marketing, Robotic Process Automation,<br>
+		Web Designing and PHP MySQL etc. Our training is 100% based on current industry <br>requirements and real-time projects. Apart from the technical knowledge,<br>
+		we believe in the overall growth of the candidates.</p>
+		<aside class="as" style="padding-left:1050px; margin:-170px; margin-top:-350px">
+			<img src="ad1.jpg" height="260px" width="380px" alt="kartik">
+		</aside>
+	</section>
+	<section id="about" class="para2">
+	<h1 style="color:#fff;text-align:center;font-size:35px;border:1px solid black;background-color:#0000FF">Quastech Student Reviews</h1>
+		<iframe width="350" height="250" <iframe width="699" height="393" src="https://www.youtube.com/embed/K0WG7KoiXgA" title="Student Review | Software Testing | QUASTECH" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+		<figcaption style="color:white;">Video 1</figcaption>
+		
+		<aside style="margin-top:-270px;padding-left:450px;">
+			<iframe class="f1" width="350" height="250" <iframe width="699" height="393" src="https://www.youtube.com/embed/rW4wK14SUKw" title="Student Review | Java Developer | QUASTECH" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+		<figcaption style="color:white;">Video 2</figcaption>
+		
+		<aside style="margin:-270px;padding-left:700px;">
+			<iframe class="f2" width="350" height="250" <iframe width="699" height="393" src="https://www.youtube.com/embed/fNcHFbcFbX4" title="Student Review | Java Developer | QUASTECH" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<figcaption style="color:white;" class="fig">Video 3</figcaption>
+		</aside>
+	</section><br>
+	
+	<section class="foot" style="background-color:gray;">
+		<footer class="foot0">
+			<h1 style="color:white;">Branches</h1>
+			<p style="color:yellow;">THANE : +91 8422800381</p>
+			<p style="color:yellow;">BORIVALI : +91 8422800384</p>
+			<p style="color:yellow;">MOHALI : +91 7208008461</p>
+			<footer class="foot1" style="padding-left:500px; margin-top:-150px;">
+			<h1 style="color:white;">Quastech</h1>
+			<a href="#" style="color:yellow;">info@quastech.in</a><br>
+			<a href="#" style="color:yellow;">Software Development</a><br>
+			<a href="#" style="color:yellow;">Digital Marketing Projects</a><br>
+			<a href="#" style="color:yellow;">Quastech Degree Program +</a><br>
+		</footer>
+		<footer class="foot2" style="padding-left:900px;margin-top:-140px; ">
+			<h1 style="color:white;">COURSES OFFERED</h1>
+			<a href="#" style="color:yellow;">Software Testing</a><br>
+			<a href="#" style="color:yellow;">Java Training</a><br>
+			<a href="#" style="color:yellow;">Php Mysql Training</a><br>
+			<a href="#" style="color:yellow;">Python and Machine Learning</a><br>
+			<a href="#" style="color:yellow;">Robotic Process Automation</a><br>
+			<a href="#" style="color:yellow;">Digital Marketing</a><br>
+		</footer>	
+		</footer>
+		
+			
+	</section>
+	<section>
+		<footer style="background-color:Gray;">
+			<center><h1 style="color:white;">© 2018 QUASTECH. All rights reserved</h1><center>
+		</footer>
+	</section>
 </body>
 </html>
-
 
