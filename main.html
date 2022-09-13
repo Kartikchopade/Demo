@@ -229,6 +229,7 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   width:100%;
+  font-size:20px;
 }
 
 input[type=submit]:hover {
@@ -381,17 +382,17 @@ function contact()
 	<h1 style="color:#fff;text-align:center;font-size:35px;border:1px solid black;background-color:tomato">Quastech Contact us</h1>
 
 		  <form id="myform" method="post">
-			<label style="color:#fff;">First Name</label>
+			<label style="color:#fff; font-size:15px;">First Name</label>
 			<input type="text" name="firstname" placeholder="Enter Your First Name.." required>
 
-			<label style="color:#fff;">Last Name</label>
+			<label style="color:#fff;  font-size:15px;">Last Name</label>
 			<input type="text" name="lastname" placeholder="Enter Your last Name.." required>
-			<label style="color:#fff;">Contact No</label>
+			<label style="color:#fff;  font-size:15px;">Contact No</label>
 			<input type="number" name="phoneno" placeholder="Enter Mobile Number.." required>
-			<label style="color:#fff;">Email Id</label>
+			<label style="color:#fff;  font-size:15px;">Email Id</label>
 			<input type="email" name="email" placeholder="Enter Email Id.." required>
 
-			<label style="color:#fff;">City</label>
+			<label style="color:#fff;  font-size:15px;">City</label>
 			<select name="city">
 			  <option value="borivali">Borivali</option>
 			  <option value="thane">Thane</option>
@@ -399,7 +400,7 @@ function contact()
 			</select>			
 			
 			
-			<label style="color:#fff;">Comment</label>
+			<label style="color:#fff;  font-size:15px;">Comment</label>
 			<textarea name="comment" placeholder="Write something.." style="height:200px" required></textarea>
 
 			<input type="submit" value="Submit" onclick="return contact()">
